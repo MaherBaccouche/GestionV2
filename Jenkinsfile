@@ -1,7 +1,7 @@
 node{
     
     stage("Git Clone"){
-        git credentialsId: 'GIT_CREDENTIALS', url: 'https://github.com/MaherBaccouche/GestionV2.git'
+        git credentialsId: 'githubv2', url: 'https://github.com/MaherBaccouche/GestionV2.git'
     }
     stage("Maven Clean Build"){
         def mavenHome = tool name: "mavenLocal", type: "maven"
